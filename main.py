@@ -2,6 +2,7 @@ from jdlogger import logger
 import requests
 import time
 from PIL import Image
+import matplotlib.pyplot as plt
 import threading
 
 
@@ -50,9 +51,12 @@ class JDSecKill(object):
         threading.Thread(target=self.check_qrcode_status).start()
 
         #open qrcode
-        # with open('qrCode.jpg', 'wb')as f:
-        #     f.write(qr_resp.content)
-        # img = Image.open('qrCode.jpg')
+        with open('qrCode.jpg', 'wb')as f:
+            f.write(qr_resp.content)
+        img = Image.open('qrCode.jpg')
+        plt.figure('qrcode')
+        plt.imshow(img)
+        plt.show()
 
     def check_qrcode_status(self):
         checkUrl = f'https://qr.m.jd.com/check?callback=jQuery4643268&appid=133&token={self.qr_token}&_={round(time.time() * 10000)}'
