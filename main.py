@@ -4,6 +4,7 @@ import time
 from PIL import Image
 import matplotlib.pyplot as plt
 import threading
+import json
 
 
 
@@ -64,6 +65,10 @@ class JDSecKill(object):
         while True:
             time.sleep(1)
             print(self.qr_token)
+            checkResponse = self.session.get(checkUrl)
+            # print()
+            print(str(checkResponse.content, 'utf-8'))
+
 
 
     def select_items(self):
