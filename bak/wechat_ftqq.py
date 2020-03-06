@@ -5,7 +5,7 @@ import json
 
 import requests
 
-from jdlogger import logger
+from bak.jdlogger import logger
 
 
 def sendWechat(sc_key, text='京东商品监控', desp=''):
