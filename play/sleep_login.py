@@ -35,6 +35,8 @@ if __name__ == "__main__":
     # resp = sess.get(url, proxies=proxies, verify=cert_file)
     resp = sess.get(url)
     # resp = requests.get(url)
+
+    
     print(resp.status_code)
     # open qrcode
     with open('qrCode.jpg', 'wb')as f:
