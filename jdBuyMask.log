@@ -143,3 +143,10 @@
 2020-03-06 18:39:21,218 INFO: select all itmes and 
 2020-03-06 18:39:21,218 INFO: settlement
 2020-03-06 18:39:21,218 INFO: submit order
+2020-03-09 17:03:57,299 INFO: login successfully by cookies
+2020-03-09 17:03:57,299 INFO: select all items
+2020-03-09 17:03:57,299 INFO: add items into cart
+2020-03-09 17:03:57,299 INFO: select all itmes and 
+2020-03-09 17:03:57,299 INFO: settlement
+2020-03-09 17:03:57,300 INFO: submit order
+2020-03-09 17:04:22,334 INFO: start to get qrcode
